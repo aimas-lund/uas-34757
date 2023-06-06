@@ -84,9 +84,13 @@ end
 hold off
 
 %% Scale the route
-x_scale = 0.65;
-y_scale = 0.55;
-z_scale = 0.75;
+%x_scale = 0.65;
+%y_scale = 0.55;
+%z_scale = 0.75;
+
+x_scale = 0.60;
+y_scale = 0.50;
+z_scale = 0.70;
 
 x_offset = 0.3;
 y_offset = 0.5;
