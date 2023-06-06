@@ -32,7 +32,7 @@ route = greedy_2d(map, greedy_start, greedy_end);
 
 % We have to apply the corresponding transformations from (matlab2cartesian)
 route = flip(route, 2);
-route = [route(:, 1), size(map,2)-route(:, 2)+1]
+route = [route(:, 1), size(map,2)-route(:, 2)+1];
 
 % The plot considers the path as cartesian values not as how matlab
 % interprets it.

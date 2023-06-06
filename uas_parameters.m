@@ -31,8 +31,9 @@ close all
 clc
 
 %% SIMULATION PARAMETERS
+map_script_3d;
 
-route = [0 0 1 ; 9 0 1 ; 9 9 1];
+route = route_scaled; %[0 0 1 ; 9 0 1 ; 9 9 1];
 wall_color = [0.8 0.2 0.2];
 sample_time = 4e-2;
 publish_rate = 1 * sample_time;

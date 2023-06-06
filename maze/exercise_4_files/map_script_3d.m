@@ -1,15 +1,16 @@
 close all
 clear all
 clc
+
 %% Setup the map
 % Load the map from the wall file. Each line, except the two last, in the
 % wall file is an obstacle. The position of the obstacle is defined in the
 % wall file by its x y z coordinates. The three last elements is
 % the size of the maze, the starting position and goal position
-load('wall.txt')
+load('wall.txt');
 % If a different named file is used, then write it into the wall variable
 % e.g. wall = maze_2;
-wall = wall;
+% wall = wall;
 
 % Define the map size
 max_x = wall(length(wall) - 2, 1);
@@ -100,5 +101,5 @@ route_scaled(:,2) = (route_scaled(:,2) - 1) * y_scale + y_offset;
 route_scaled(:,3) = (route_scaled(:,3) - 1) * z_scale + z_offset;
 
 % Print the scaled route
-route_scaled
-
+route_scaled;
+ 
